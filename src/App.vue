@@ -22,7 +22,7 @@
     <v-divider class="my-3" />
 
     <v-list nav shaped dense>
-      <v-list-item link >
+      <v-list-item link :to="'/'">
         <v-list-item-icon>
           <v-icon>mdi-home-outline</v-icon>
         </v-list-item-icon>
@@ -32,7 +32,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link >
+      <v-list-item link :to="'/users/ :id'" exact>
         <v-list-item-icon>
           <v-icon>mdi-account</v-icon>
         </v-list-item-icon>
@@ -42,7 +42,7 @@
         </v-list-item-content>
       </v-list-item>
 
-      <v-list-item link >
+      <v-list-item link :to="''">
         <v-list-item-icon>
           <v-icon>mdi-account-plus-outline</v-icon>
         </v-list-item-icon>
